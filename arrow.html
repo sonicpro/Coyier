@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div[style] {
+      margin: 0 auto;
+      position: relative;
+      }
+      div.arrow-left::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: -10px;
+      border-right-color: red;
+      border-style: solid;
+      border-top-width: 10px;
+      border-top-color: transparent;
+      border-right-width: 10px;
+      border-bottom-width: 10px;
+      border-bottom-color: transparent;
+      border-left-width: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="arrow-left" style="background-color: blue; width: 20px; height: 40px;"></div>
+    </div>
+  </body>
+</html>
+    
